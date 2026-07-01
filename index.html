@@ -14,31 +14,102 @@
 
 <body>
 
-    <div class="container-fluid top-bar py-2 px-4 d-flex justify-content-between align-items-center">
-        <div class="top-bar-left">
-            <p class="m-0 text-white-50 small">
-                All course 24% off for <span class="text-success fw-semibold">Students</span>
-            </p>
+    <!-- top bar -->
+
+    <div class="container-fluid p-0" style="background-color: rgb(197, 252, 204);">
+        <div class="container-fluid top-bar">
+            <div class="container py-2 d-flex justify-content-between align-items-center">
+                <div class="top-bar-left">
+                    <p class="m-0 text-white-50 small">
+                        All course 24% off for <span class="text-success fw-semibold">Students</span>
+                    </p>
+                </div>
+
+                <div class="top-bar-center d-flex gap-4">
+                    <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
+                        <i class="fa-solid fa-phone text-success"></i>
+                        <span>+(000) 345 67 89</span>
+                    </div>
+                    <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
+                        <i class="fa-solid fa-envelope text-success"></i>
+                        <span>info@gmail.com</span>
+                    </div>
+                </div>
+                <div class="top-bar-right d-flex gap-3 text-white-50">
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-facebook-f small"></i></a>
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-twitter small"></i></a>
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-skype small"></i></a>
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-instagram small"></i></a>
+                </div>
+            </div>
         </div>
 
-        <div class="top-bar-center d-flex gap-4">
-            <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
-                <i class="fa-solid fa-phone text-success"></i>
-                <span>+(000) 345 67 89</span>
-            </div>
-            <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
-                <i class="fa-solid fa-envelope text-success"></i>
-                <span>info@gmail.com</span>
-            </div>
-        </div>
+        <!-- nav bar -->
 
-        <div class="top-bar-right d-flex gap-3 text-white-50">
-            <a href="#" class="text-reset dread-none"><i class="fa-brands fa-facebook-f small"></i></a>
-            <a href="#" class="text-reset dread-none"><i class="fa-brands fa-twitter small"></i></a>
-            <a href="#" class="text-reset dread-none"><i class="fa-brands fa-skype small"></i></a>
-            <a href="#" class="text-reset dread-none"><i class="fa-brands fa-instagram small"></i></a>
+        <nav class="navbar navbar-expand-lg shadow-sm mb-2" style="background-color: rgb(224, 255, 228);">
+            <div class="container">
+                <a class="navbar-brand fw-semibold fs-4" href="#">Online <span
+                        class="text-success fw-semibold">Learing</span></a>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-success fw-semibold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="#">HTML</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="#">CSS</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="#">JS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="#">Social Sharing</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="#">Related Posts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-success fw-semibold border-0" type="submit">Sign In</button>
+                        <button class="btn btn-outline-success fw-semibold" type="submit">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- modal  -->
+
+        <div class="container wrap-container-model">
+            <div class="row">
+                <div class="col-md-5 mt-2 fw-semibold">
+                    <p class="title">Now Learning from anywhere, and build you <span class="text-success">bright
+                            career.</span></p>
+                    <div class="text text-secondary">
+                        <p>Live as if you were to die tomorrow. Learn as if you were to live forever. Education is not
+                            the filling of a pail, but the lighting of a fire.</p>
+                    </div>
+                    <button class="btn btn-success">Start A Course</button>
+                </div>
+                <div class="col-md-7">
+                    <img class="img-fluid w-100 p-4"
+                        src="https://edlinguist.com/wp-content/uploads/2021/01/learn--scaled.jpg" alt="">
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- card here -->
 
 </body>
 <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
