@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     height: auto;
     background-color: blue;
@@ -10,14 +10,14 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.top-bar p, 
+.top-bar p,
 .top-bar span {
     font-size: 13px;
     letter-spacing: 0.3px;
 }
 
 .top-bar .text-success {
-    color: #2bb673 !important; 
+    color: #2bb673 !important;
 }
 
 .top-bar-right a {
@@ -27,10 +27,143 @@ body{
 .top-bar-right a:hover {
     color: #2bb673 !important;
 }
-.wrap-container-model .title{
+
+.wrap-container-model .title {
     font-size: 40px;
     font-family: 'Poppins';
     margin-top: 16px;
     line-height: 50px;
     color: rgb(49, 49, 49);
+}
+
+/* card */
+
+.course-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    background: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructor-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.badge-category {
+    color: #198754;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.course-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #212529;
+    min-height: 45px;
+}
+
+.course-meta {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.course-footer {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 12px;
+}
+
+.text-price {
+    color: #198754;
+    font-weight: 700;
+}
+
+.rating-stars {
+    color: #ffc107;
+    font-size: 0.85rem;
+}
+
+/* search and category */
+
+.section-title {
+    font-weight: 700;
+    color: #212529;
+}
+
+.section-title span {
+    color: #198754;
+}
+
+.search-container .form-control {
+    border: 1px solid #e9ecef;
+    border-radius: 6px 0 0 6px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.search-container .form-control:focus {
+    box-shadow: none;
+    border-color: #198754;
+}
+
+.search-container .btn-search {
+    background-color: #e8f5e9;
+    border: 1px solid #e9ecef;
+    border-left: none;
+    color: #198754;
+    border-radius: 0 6px 6px 0;
+    padding: 0 16px;
+}
+
+.search-container .btn-search:hover {
+    background-color: #d4edda;
+}
+
+.category-tabs {
+    gap: 12px;
+}
+
+.btn-category {
+    background: #ffffff;
+    color: #495057;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-category:hover {
+    background-color: #f1f3f5;
+    color: #212529;
+}
+
+.btn-category.active {
+    background-color: #198754;
+    color: #ffffff;
+    border-color: #198754;
 }
