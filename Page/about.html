@@ -5,14 +5,389 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Style/about.css">
-    <!-- Link the bootstrap 5.3.8 css -->
-    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <h1>Hello About page</h1>
+<style>
+    @media screen and (max-width: 576px) {
+        .hero-section .box-image .item-image img {
+            height: 35vh;
+            object-fit: cover;
+        }
+    }
 
-    <!-- Code here  -->
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        .hero-section .box-image .item-image img {
+            height: 40vh;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .hero-section .box-image .item-image img {
+            height: 70vh;
+            object-fit: cover;
+        }
+    }
+</style>
+<body w-100 vh-100 p-2 p-lg-5>
+    <div class="topbar py-2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 text-center text-md-start">
+                All course 24% off for Learning
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <i class="bi bi-telephone" id="icon"></i>
+                p(+000) 356 67 89
+                <i class="bi bi-envelope"id="icon"></i>
+                info@gmail.com
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand text-success" href="#">
+            <i class="bi bi-book"></i>
+            Online Learning
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        data-bs-toggle="dropdown">
+                        Course
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Development</a></li>
+                        <li><a class="dropdown-item" href="#">Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Design</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+
+            </ul>
+
+            <div>
+                <button class="btn btn-outline-success me-2">Sign In</button>
+                <button class="btn btn-success">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+</nav>
+    <div id="carouselExampleInterval" class="carousel hero-section slide p-5" data-bs-ride="carousel">
+        <div class="carousel-inner box-image">
+            <div class="carousel-item active item-image" data-bs-interval="10000">
+                <img src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item item-image" data-bs-interval="2000">
+                <img src="https://i.pinimg.com/1200x/ff/bd/dd/ffbddd37b2ceffe750fc534bfa11429d.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item item-image">
+                <img src="https://i.pinimg.com/736x/a0/61/81/a061816721aebd2be0fb2c3f2d3f3658.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 class="text-center mb-5 fw-bold" >Our Courses</h1>
+        
+    <section class="about py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/ad/88/5f/ad885fb4cbbaa8c4efb58cba1743f3c3.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : Python</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Olivia</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/c7/b8/11/c7b8113247fecd83bd9b5ed5bd3f34d5.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : Linux</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/d9/9f/f6/d99ff699c97779d1e76092bf7b2b4fc9.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : SQL</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/14/23/70/142370ab227a6180cd9aac5b2bf46647.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : GitHub</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Teacer Tony">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="about py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/ef/73/57/ef7357f8edafba5276df1698801ce94a.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : Web Design</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/69/9e/3b/699e3b329647db00a7e8519c58f5771f.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : CSS</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/76/76/7e/76767ea93d0132004c117ecee36b40ad.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : Node JS</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px; overflow: hidden;">
+                        <div class="position-relative">
+                            <img src="https://i.pinimg.com/736x/20/d2/e1/20d2e1438ffeb048f0c104a73f074e33.jpg" class="card-img-top" alt="Course Image">
+                            <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background-color: #7D80F3; font-size: 0.75rem;">Beginner</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold" style="color: #FF7D90; font-size: 1.1rem;">$35.00</span>
+                                <div class="text-warning small" style="color: #4D62B4 !important;">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3" style="color: #2D2F54; font-size: 1rem; line-height: 1.4;">Open Programming Courses for everyone : HTML</h5>
+                            <div class="d-flex gap-3 text-muted mb-4" style="font-size: 0.85rem;">
+                                <div><i class="bi bi-clock me-1"></i> 20 hrs</div>
+                                <div><i class="bi bi-person me-1"></i> 50</div>
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center justify-content-between" style="font-size: 0.85rem;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;" alt="Olivia">
+                                    <span class="text-muted">by <strong style="color: #2D2F54;">Teacer Tony</strong></span>
+                                </div>
+                                <span class="text-muted">in <strong style="color: #2D2F54;">Programming</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
-<!-- Link the bootstrap 5.3.8 js -->
-<script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
