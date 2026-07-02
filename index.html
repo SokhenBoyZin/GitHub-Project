@@ -1,15 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../GitHub-Project/Style/index.css">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello Home page</h1>
-    <!-- nh nek tver home page   Khun Sokhen -->
-    
-  
+
+    <div class="container-fluid p-0" style="background-color: rgb(197, 252, 204);">
+
+        <!-- Top bar -->
+
+        <div class="container-fluid top-bar">
+            <div class="container py-2 d-flex justify-content-between align-items-center">
+                <div class="top-bar-left">
+                    <p class="m-0 text-white-50 small">
+                        All course 24% off for <span class="text-success fw-semibold">Students</span>
+                    </p>
+                </div>
+
+                <div class="top-bar-center d-flex gap-4">
+                    <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
+                        <i class="fa-solid fa-phone text-success"></i>
+                        <span>+(000) 345 67 89</span>
+                    </div>
+                    <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
+                        <i class="fa-solid fa-envelope text-success"></i>
+                        <span>info@gmail.com</span>
+                    </div>
+                </div>
+                <div class="top-bar-right d-flex gap-3 text-white-50">
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-facebook-f small"></i></a>
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-twitter small"></i></a>
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-skype small"></i></a>
+                    <a href="#" class="text-reset dread-none"><i class="fa-brands fa-instagram small"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav bar -->
+
+        <nav class="navbar navbar-expand-lg shadow-sm mb-2" style="background-color: rgb(224, 255, 228);">
+            <div class="container">
+                <a class="navbar-brand fw-semibold fs-4" href="#">Online <span
+                        class="text-success fw-semibold">Learing</span></a>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-success fw-semibold" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="./Page/about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="./Page/course.html">HTML</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="./Page/course.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="./Page/course.html">JS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="./Page/blog.html">Social Sharing</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="./Page/blog.html">Related Posts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="./Page/page.html">Free Courses</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="./Page/page.html">Top Courses</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <form href="./Page/sign-in.html">
+                            <button class="btn btn-outline-success fw-semibold border-0" type="submit">Sign In</button>
+                        </form >
+                        <form href="./Page/sign-up.html">
+                            <button class="btn btn-outline-success fw-semibold" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- modal  -->
+
+        <div class="container wrap-container-model">
+            <div class="row">
+                <div class="col-md-5 mt-2 fw-semibold">
+                    <p class="title">Now Learning from anywhere, and build you <span class="text-success">bright
+                            career.</span></p>
+                    <div class="text text-secondary">
+                        <p>Live as if you were to die tomorrow. Learn as if you were to live forever. Education is not
+                            the filling of a pail, but the lighting of a fire.</p>
+                    </div>
+                    <button class="btn btn-success shadow-sm">Start A Course</button>
+                </div>
+                <div class="col-md-7">
+                    <img class="img-fluid w-100 p-4"
+                        src="https://edlinguist.com/wp-content/uploads/2021/01/learn--scaled.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search and category -->
+
+    <div class="container my-5" >
+        <div class="row align-items-center mb-4 gy-3">
+            <div class="col-md-6 col-lg-8">
+                <h2 class="section-title mb-0">All <span>Courses</span> of Education</h2>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="input-group search-container">
+                    <input type="text" class="form-control" placeholder="Search Here" aria-label="Search Courses">
+                    <button class="btn btn-search" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap category-tabs p-3 shadow-sm rounded-3" style="background-color: rgb(224, 255, 228);">
+            <button class="btn btn-category active border-0 bg-success text-light" type="button">Development</button>
+            <button class="btn btn-category" type="button">Marketing</button>
+            <button class="btn btn-category" type="button">Data Science</button>
+            <button class="btn btn-category" type="button">Business</button>
+            <button class="btn btn-category" type="button">Financial</button>
+        </div>
+    </div>
+
+    <!-- Card -->
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">So Nita</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Science</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            So Nita: Learn to Budget and Calculate your Net Worth.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 07 hr 18 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://blog.cuw.edu/wp-content/uploads/accounting-e1697033681666.jpg"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Ihoung Chun</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Accountant</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Ihoung Chun: Learn to Budget and Calculate your Net Worth.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 12 hr 18 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 14 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 course-card">
+                    <div class="course-img-wrapper">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2025/01/How-To-Build-A-Website-For-Free-e1737009948877.png"
+                            alt="Course Image">
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                                    class="instructor-img me-2" alt="Instructor">
+                                <span class="small text-muted fw-medium">Khun Sokhen</span>
+                            </div>
+                            <span class="badge badge-category small bg-success">Web Developer</span>
+                        </div>
+
+                        <h5 class="course-title mb-3">
+                            Khun Sokhen: Learn how to build a website.
+                        </h5>
+
+                        <div class="d-flex justify-content-between course-meta mb-3">
+                            <span><i class="bi bi-clock me-1"></i> 09 hr 24 mins</span>
+                            <span><i class="bi bi-book me-1"></i> 26 Lectures</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center course-footer mt-auto">
+                            <span class="text-price">Free</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-1 small fw-bold text-muted">4.5</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- card here -->
+
 </body>
+<script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
