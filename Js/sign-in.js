@@ -6,8 +6,8 @@ const staffPassword = "staff123";
 const eyeOn = document.getElementById('eyeOn');
 const eyeSlash = document.getElementById('eyeSlash');
 
-const email_input = document.getElementById('exampleInputEmail1');
 const password_input = document.getElementById('exampleInputPassword1');
+const email_input = document.getElementById('exampleInputEmail1');
 const login_btn = document.getElementById('login-btn');
 
 login_btn.addEventListener('click', (e)=>{
