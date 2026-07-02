@@ -161,6 +161,10 @@ body {
     background-color: #f1f3f5;
     color: #212529;
 }
+.btn-category:active {
+    background-color: #219921;
+    color: #ffffff;
+}
 
 .btn-category.active {
     background-color: #198754;
