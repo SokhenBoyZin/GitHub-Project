@@ -1,3 +1,6 @@
+
+// Password and email
+
 const staffEmail = "staff123@gmail.com";
 const adminEmail = "admin123@gmail.com";
 const adminPassword = "admin123";
