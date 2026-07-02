@@ -96,3 +96,10 @@ body{
     transition: 0.3s;   
 }
 
+.form-back{
+    z-index: 200;
+    position: absolute;
+    right: 46%;
+    bottom: 14.8%;
+}
+

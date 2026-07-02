@@ -10,12 +10,13 @@ const email_input = document.getElementById('exampleInputEmail1');
 const password_input = document.getElementById('exampleInputPassword1');
 const login_btn = document.getElementById('login-btn');
 
-login_btn.addEventListener('click', ()=>{
+login_btn.addEventListener('click', (e)=>{
+    e.preventDefault();
     if(password_input.value == staffPassword && email_input.value == staffEmail){
-        window.location.href = "pos.html";
+        window.location.href = "../index.html";
     }  
     else if(password_input.value == adminPassword && email_input.value == adminEmail){
-        window.location.href = "adminDashBoard.html";
+        window.location.href = "../index.html";
     }else {
         alert("Invalid email or password!");
     }
