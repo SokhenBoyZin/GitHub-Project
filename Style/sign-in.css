@@ -1,6 +1,192 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
 body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/071/805/740/large_2x/nature-background-nature-wallpaper-close-up-view-of-vibrant-green-leaves-against-a-bright-blurred-natural-background-with-bokeh-free-photo.jpg);
     width: 100%;
-    height: auto;
+    height: 100vh;
+    place-items: center;
+    place-content: center;
+}
+.form-container{
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(87, 87, 87, 0.1);
+
+    min-width: 30%;
+    padding: 80px;  
+    height: 560px;
+    box-shadow: 0px 0px 15px rgb(156, 156, 156);
+}
+.form h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.form label{
+    color: #ffffff;
+    font-weight: 500;
+}
+.form .password-container{
+    position: relative;
+}
+.form .eyeIcon{
+    display: block;
+    position: absolute;
+    left: 90%;
+    bottom: 18%;
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+}
+.form .eyeIconSlash{
+    display: none;
+    position: absolute;
+    left: 90%;
+    bottom: 18%;
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+}
+.form .eyeIconSlash:hover{
+    opacity: 0.5;
+    transition: .3s;
+}
+.form .eyeIcon:hover{
+    opacity: 0.5;
+    transition: .3s;
+}
+#exampleInputEmail1{
+    padding: 10px 50px 15px 10px;
+    border: none;
+}
+#exampleInputPassword1{
+    padding: 10px 50px 15px 10px;
+    border: none;
+}
+.form-container .logo img{
+    width: 128px;
+}
+.form-container .logo{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form button{
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 15px;
+    background: rgb(255, 188, 4);
+    border: none;
+}
+.form button:hover{
+    background: rgb(201, 147, 30);
+    box-shadow: 0px 0px 8px rgb(205, 179, 13);
+}
+.btn-primary:active, 
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #a27130 !important;
+  color: #ffffff !important;
+}
+.form input:focus{
+    box-shadow: 0px 0px 8px rgb(181, 245, 6);
+    transition: 0.3s;   
 }
 
-/* Code here */
+.form-back{
+    z-index: 200;
+    position: absolute;
+    right: 46%;
+    bottom: 7.5%;
+}
+
+/* 1280 not yet */
+
+@media (min-width: 1281px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 47.5%;
+        bottom: 16%;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 834px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 43%;
+        bottom: 19%;
+    }
+    .form-container{
+        width: 60%;
+        height: 600px;
+        padding: 40px;
+        padding-top: 70px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 799px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 43%;
+        bottom: 16%;
+    }
+    .form-container{
+        width: 60%;
+        height: 550px;
+        padding: 40px;
+        padding-top: 70px;
+    }
+    
+}
+@media (min-width: 884px) and (max-width: 1219px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 43%;
+        bottom: 19%;
+    }
+    .form-container{
+        width: 60%;
+        height: 550px;
+        padding: 50px;
+        padding-top: 70px;
+    }
+    
+}
+@media (min-width: 376px) and (max-width: 767px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 36%;
+        bottom: 3%;
+    }
+    .form-container{
+        width: 90%;
+        padding: 30px;
+        padding-top: 70px;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 375px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 36%;
+        bottom: 3%;
+    }
+    .form-container{
+        height: 500px;
+        width: 90%;
+        padding: 30px;
+        padding-top: 70px;
+    }
+    
+}
