@@ -99,44 +99,93 @@ body{
     object-fit:cover;
 }
 
-.course-tag{
-    position:absolute;
-    bottom:10px;
-    right:10px;
-    background:#28a745;
-    color:white;
-    padding:4px 12px;
-    border-radius:20px;
-    font-size:12px;
+.contact{
+    padding: 50px 0;
+    background-color: #fef3f3;
 }
-
-.author-img{
-    width:35px;
-    height:35px;
-    border-radius:50%;
+.contect-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
 }
-
-.price{
-    color:#28a745;
-    font-weight:bold;
+.first-info img{
+    width: 150px;
+    height: auto;
 }
-
-.rating{
-    color:gold;
+.contect-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
-
-.footer{
-    background:#111827;
-    color:white;
+.contect-info p{
+    color: #565655;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-left:2px;
+    transition: all .42;
 }
-
-.footer a{
-    color:#ddd;
-    text-decoration:none;
+.contect-info p:hover{
+    color: #EE1c47;
+    transition: all.42s ease;
 }
-
-.footer a:hover{
-    color:white;
+.social-icon i{
+    color: #565655;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42;
+}
+.social-icon i:hover{
+    color: #000;
+    transition: all .42s ease;
+    transform:scale(1.2) ;
+}
+.contact{
+    background-color: #fef3f3;
+}
+.contect-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.first-info img{
+    width: 150px;
+    height: auto;
+}
+.contect-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contect-info p{
+    color: #565655;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42;
+}
+.contect-info p:hover{
+    color: #EE1c47;
+    transition: all.42s ease;
+}
+.social-icon i{
+    color: #565655;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42;
+}
+.social-icon i:hover{
+    color: #000;
+    transition: all .42s ease;
+    transform:scale(1.2) ;
 }
 
 @media(max-width:768px){
