@@ -14,84 +14,101 @@
     />
   </head>
   <body>
-    <div class="topbar py-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start">
-            All course 24% off for Learning
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <i class="bi bi-telephone" id="icon"></i>
-            <span class="m-auto">p(+000) 356 67 89</span>
-            <i class="bi bi-envelope" id="icon"></i>
-            <span class="text-center">info@gmail.com</span>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-instagram"></i>
-          </div>
+    <div class="container-fluid p-0" style="background-color: rgb(255, 255, 255);">
+
+        <!-- Top bar -->
+
+        <div class="container-fluid top-bar d-none d-lg-block">
+            <div class="container py-2 d-md-flex justify-content-between align-items-center">
+                <div class="container top-bar-left">
+                    <p class="m-0 text-white-50 small">
+                        All course 24% off for <span class="text-success fw-semibold">Students</span>
+                    </p>
+                </div>
+
+                <div class="container d-lg-flex gap-4 justify-content-end">
+                    <div class="top-bar-center d-flex gap-4">
+                        <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
+                            <i class="fa-solid fa-phone text-success"></i>
+                            <span>+(000) 345 67 89</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center gap-2 text-white-50 small">
+                            <i class="fa-solid fa-envelope text-success"></i>
+                            <span>info@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="top-bar-right d-flex gap-3 text-white-50">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter-x"></i>
+                        <i class="bi bi-skype"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand text-success" href="#">
-          <i class="bi bi-book"></i>
-          Online Learning
-        </a>
 
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- nav bar -->
 
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                data-bs-toggle="dropdown">Course</a>
-
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item fw-semibold" href="./course.html">HTML</a>
-                </li>
-                <li>
-                  <a class="dropdown-item fw-semibold" href="./Page/course.html">CSS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item fw-semibold" href="./Page/course.html">JS</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages</a>
-            </li>
-          </ul>
-
-          <div>
-            <button class="btn btn-outline-success me-2">Sign In</button>
-            <button class="btn btn-success">Sign Up</button>
-          </div>
-        </div>
-      </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg shadow-sm mb-2" style="background-color: rgb(224, 255, 228);">
+            <div class="container">
+                <a class="navbar-brand fw-semibold fs-4" href="#">Online <span
+                        class="text-success fw-semibold">Learning</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between w-100" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" aria-current="page"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="../Page/about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold active text-success" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="../Page/course.html">HTML</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="../Page/course.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="../Page/course.html">JS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="../Page/blog.html">Social Sharing</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="../Page/blog.html">Related Posts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-semibold" href="../Page/page.html">Free Courses</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="../Page/page.html">Top Courses</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <form action="../Page/sign-in.html">
+                            <button class="btn btn-outline-success fw-semibold border-0" type="submit">Sign In</button>
+                        </form>
+                        <form action="../Page/sign-up.html">
+                            <button class="btn btn-outline-success fw-semibold" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     <section>
       <h5 class="text-center mt-5 fw-bold">OUR COURSES</h5>
       <h1 class="text-center">Introduction to <span class="text-success">Web Development</span></h1>

@@ -1,44 +1,41 @@
-body{
-    background:white;
-    font-family: 'Poppins', sans-serif;
+body {
+    width: 100%;
+    height: auto;
+    background-color: blue;
 }
 
-
-.topbar{
-    background:#363535;
-    color:white;
-    font-size:14px;
-}
-.row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-.row #icon{
-    margin:0 5px;
-    font-size:18px;
-    color: green
+.top-bar {
+    background-color: #0f1612;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-
-.navbar-brand{
-    font-size:24px;
-    font-weight:bold;
+.top-bar p,
+.top-bar span {
+    font-size: 13px;
+    letter-spacing: 0.3px;
 }
 
-.hero{
-    background:#eef7ef;
-    padding:70px 0;
+.top-bar .text-success {
+    color: #2bb673 !important;
 }
 
-.hero h1{
-    font-size:52px;
-    font-weight:700;
+.top-bar-right a {
+    transition: color 0.2s ease-in-out;
 }
 
-.hero-image{
-    position:relative;
+.top-bar-right a:hover {
+    color: #2bb673 !important;
 }
+
+.wrap-container-model .title {
+    font-size: 40px;
+    font-family: 'Poppins';
+    margin-top: 16px;
+    line-height: 50px;
+    color: rgb(49, 49, 49);
+}
+
 
 .course-badge{
     position:absolute;
