@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    height: auto;
+}
+.top-bar {
+    background-color: #0f1612;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.top-bar p,
+.top-bar span {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+.top-bar .text-success {
+    color: #2bb673 !important;
+}
+
+.top-bar-right a {
+    transition: color 0.2s ease-in-out;
+}
+
+.top-bar-right a:hover {
+    color: #2bb673 !important;
+}
+/* Code here */
