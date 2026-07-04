@@ -104,4 +104,92 @@ body{
     bottom: 10%;
 }
 
+@media (min-width: 1281px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 47.5%;
+        bottom: 11.3%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 834px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 43%;
+        bottom: 19%;
+    }
+    .form-container{
+        width: 60%;
+        height: 600px;
+        padding: 40px;
+        padding-top: 70px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 799px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 43%;
+        bottom: 16%;
+    }
+    .form-container{
+        width: 60%;
+        height: 550px;
+        padding: 40px;
+        padding-top: 70px;
+    }
+    
+}
+
+@media (min-width: 884px) and (max-width: 1219px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 43%;
+        bottom: 19%;
+    }
+    .form-container{
+        width: 60%;
+        height: 550px;
+        padding: 50px;
+        padding-top: 70px;
+    }
+    
+}
+
+@media (min-width: 376px) and (max-width: 767px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 36%;
+        bottom: 3%;
+    }
+    .form-container{
+        width: 90%;
+        height: 550px;
+        padding: 30px;
+        padding-top: 30px;
+    }   
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+    .form-back{
+        z-index: 200;
+        position: absolute;
+        right: 36%;
+        bottom: 3%;
+    }
+    .form-container{
+        height: 500px;
+        width: 90%;
+        padding: 30px;
+        padding-top: 70px;
+    }
+    
+}
+
 
