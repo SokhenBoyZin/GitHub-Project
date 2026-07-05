@@ -1,6 +1,7 @@
 body{
     width: 100%;
     height: auto;
+    background-color: #dcede6; padding-bottom: 50px;
 }
 .top-bar {
     background-color: #0f1612;
@@ -25,4 +26,16 @@ body{
 .top-bar-right a:hover {
     color: #2bb673 !important;
 }
-/* Code here */
+.card { border-radius: 15px; border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.card-img-custom { width: 100px; height: 70px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+.btn-share { width: 100%; border: none; color: white; padding: 5px; border-radius: 5px; font-size: 0.75rem; }
+.share-text { font-size: 0.7rem; color: #666; display: block; margin-top: 4px; }
+.card {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
